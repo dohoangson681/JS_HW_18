@@ -10,7 +10,7 @@ document.querySelector("#btnAddNum").onclick  = arrayInput ;
 function duyetMang() {
     var content = "" ; 
     for(var i = 0 ; i < mainArr.length  ; i++){
-        content +="i =" + i + " : " + "[ " + mainArr[i] + " ]" + "<br>"  ; 
+        content +=`${mainArr[i]}  ` ; 
     }
     
     return content ; 

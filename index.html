@@ -21,7 +21,17 @@
             <!-- reset mang  -->
             <button type="button" id="btnResetArray" class="btn btn-success">Reset array</button>
         </form> 
-        <p id="mainArray_output" class="text-primary text-center mt-5"></p>
+        <h2 id="mainArray_output" class="text-primary text-center mt-5 " ></h2>
+    </div>
+    <div class="array_input w-50 mx-auto my-5" >
+        <h3>Tạo mảng ngẫu nhiên có n phần tử</h3>
+        <form class="inputArray_Form">
+            <input type="number" id="randomArrInput" placeholder="Số phần tử muốn tạo">
+            <input type="number" id="maxRandomInput" placeholder="Max Value In Array">
+            <button type="button" id="btnRamdom" class="btn btn-primary">Khởi tạo mảng</button>
+            <button type="button" id="btnRamdomReset" class="btn btn-danger">Reset mảng</button>
+        </form> 
+        <h2 id="randomArray_output" class="text-primary text-center mt-5 " ></h2>
     </div>
     <div class="row container mx-auto">
         <div class="col-3">
@@ -124,15 +134,16 @@
             <div class="tab-pane fade" id="bai8" role="tabpanel">
                 <h3 class="text-primary text-center my-5">Tìm số nguyên tố đầu tiên.</h3>
                 <button type="button" id="btnBai8" class="btn btn-success">First PrimeNum</button>
-                <h3 id="resultBai8" class="text-success my-5">RES5</h3>
+                <h3 id="resultBai8" class="text-success my-5">RES8</h3>
             </div>
             <!-- Bài 9 -->
             <div class="tab-pane fade" id="bai9" role="tabpanel">
                 <h3 class="text-primary text-center my-5">Tìm số chẵn cuối cùng trong mảng.</h3>
                 <form>
                     <input type="number" id="arrayb9_input">
-                    <button type="button" id="btnarrayb9" class="btn btn-success my-5">Add</button>
+                    <button type="button" id="btnarrayb9" class="btn btn-success my-5 ml-4">Add</button>
                 </form>
+                <h3 id="contentarrayb9" class="text-success"></h3>
                 <button type="button" id="btnBai9" class="btn btn-success">Count Int</button>
                 <h3 id="resultBai9" class="text-success my-5">RES5</h3>
             </div>
@@ -159,6 +170,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="./js/array_input.js"></script>
+    <script src="./js/random_array.js"></script>
     <script src="./js/bai1.js"></script>
     <script src="./js/bai2.js"></script>
     <script src="./js/bai3.js"></script>
