@@ -12,12 +12,23 @@
 </head>
 <body>
     <h1 class="text-center text-primary my-5">Bài tập JS Buổi 18</h1>
+    <div class="array_input w-50 mx-auto my-5" >
+        <h3>Người dùng nhập mảng</h3>
+        <form class="inputArray_Form">
+            <input type="number" id="mainArrayInput">
+            <!-- them phan tu  -->
+            <button type="button" id="btnAddNum" class="btn btn-success">Thêm phần tử</button>
+            <!-- reset mang  -->
+            <button type="button" id="btnResetArray" class="btn btn-success">Reset array</button>
+        </form> 
+        <p id="mainArray_output" class="text-primary text-center mt-5"></p>
+    </div>
     <div class="row container mx-auto">
         <div class="col-3">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <!-- Bài 1  -->
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#bai1" role="tab" >
-                Bài 1
+               Bài 1
             </a>
             <!-- Bài 2  -->
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bai2" role="tab" >
@@ -62,43 +73,74 @@
           <div class="tab-content" id="v-pills-tabContent">
             <!-- Bài 1  -->
             <div class="tab-pane fade show active" id="bai1" role="tabpanel" >
-                COntent
+                <h3 class="text-success my-4 text-center">Tổng các số dương trong mảng</h3>
+                
+                <button type="button" class="btn btn-success mt-4" id="btnBai1">Tính tổng</button>
+                <h3 class="text-primary mt-4" id="resultBai1"></h3>
             </div>
             <!-- Bài 2 -->
             <div class="tab-pane fade" id="bai2" role="tabpanel" >
-                COntent
+                <h3 class="text-primary text-center my-5">Đếm số lượng số dương xuất hiện trong mảng .</h3>
+                <button type="button" id="btnBai2" class="btn btn-success">Đếm số dương</button>
+                <h3 id="resultBai2" class="text-success my-5">RES2</h3>
             </div>
             <!-- Bài 3 -->
             <div class="tab-pane fade" id="bai3" role="tabpanel">
-                content
+                <h3 class="text-primary text-center my-5">Tìm số nhỏ nhất trong mảng .</h3>
+                <button type="button" id="btnBai3" class="btn btn-success">Tìm Min</button>
+                <h3 id="resultBai3" class="text-success my-5">RES3</h3>
             </div>
             <!-- Bài 4 -->
             <div class="tab-pane fade" id="bai4" role="tabpanel">
-                COntent
+                <h3 class="text-primary text-center my-5">Tìm số dương nhỏ nhất trong mảng.</h3>
+                <button type="button" id="btnBai4" class="btn btn-success">Tìm Min Dương</button>
+                <h3 id="resultBai4" class="text-success my-5">RES4</h3>
             </div>
             <!-- Bài 5 -->
             <div class="tab-pane fade" id="bai5" role="tabpanel">
-                COntent
+                <h3 class="text-primary text-center my-5">Tìm số chẵn cuối cùng trong mảng.</h3>
+                <button type="button" id="btnBai5" class="btn btn-success">Last Even</button>
+                <h3 id="resultBai5" class="text-success my-5">RES5</h3>
             </div>
             <!-- Bài 6 -->
             <div class="tab-pane fade" id="bai6" role="tabpanel">
-                COntent
+                <h3 class="text-primary text-center my-5">Đổi chỗ 2 giá trị bất kì trong mảng.</h3>
+                <form>
+                    <label for="input1Bai6">Nhập vào vị trí thứ 1</label>
+                    <input type="number" id="input1Bai6"> <br>
+                    <label for="input2Bai6">Nhập vào vị trí thứ 2</label>
+                    <input type="number" id="input2Bai6"> <br>
+                </form>
+                <button type="button" id="btnBai6" class="btn btn-success mt-4">Swap</button>
+                <h3 id="resultBai6" class="text-success my-5">RES6</h3>
             </div>
             <!-- Bài 7 -->
             <div class="tab-pane fade" id="bai7" role="tabpanel">
-                COntent
+                <h3 class="text-primary text-center my-5">Sắp xếp mảng tăng dần.</h3>
+                <button type="button" id="btnBai7" class="btn btn-success">Sort</button>
+                <h3 id="resultBai7" class="text-success my-5">RES7</h3>
             </div>
             <!-- Bài 8 -->
             <div class="tab-pane fade" id="bai8" role="tabpanel">
-                COntent
+                <h3 class="text-primary text-center my-5">Tìm số nguyên tố đầu tiên.</h3>
+                <button type="button" id="btnBai8" class="btn btn-success">First PrimeNum</button>
+                <h3 id="resultBai8" class="text-success my-5">RES5</h3>
             </div>
             <!-- Bài 9 -->
             <div class="tab-pane fade" id="bai9" role="tabpanel">
-                COntent
+                <h3 class="text-primary text-center my-5">Tìm số chẵn cuối cùng trong mảng.</h3>
+                <form>
+                    <input type="number" id="arrayb9_input">
+                    <button type="button" id="btnarrayb9" class="btn btn-success my-5">Add</button>
+                </form>
+                <button type="button" id="btnBai9" class="btn btn-success">Count Int</button>
+                <h3 id="resultBai9" class="text-success my-5">RES5</h3>
             </div>
             <!-- Bài 10 -->
             <div class="tab-pane fade" id="bai10" role="tabpanel">
-                COntent
+                <h3 class="text-primary text-center my-5">So sánh số lượng số dương và âm.</h3>
+                <button type="button" id="btnBai10" class="btn btn-success">Compare</button>
+                <h3 id="resultBai10" class="text-success my-5">RES10</h3>
             </div>
           </div>
         </div>
@@ -116,6 +158,7 @@
     <!-- bs4  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./js/array_input.js"></script>
     <script src="./js/bai1.js"></script>
     <script src="./js/bai2.js"></script>
     <script src="./js/bai3.js"></script>
@@ -126,6 +169,7 @@
     <script src="./js/bai8.js"></script>
     <script src="./js/bai9.js"></script>
     <script src="./js/bai10.js"></script>
+   
 
 </body>
 </html>
